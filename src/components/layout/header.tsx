@@ -1,7 +1,11 @@
+import Navbar from '../navbar.tsx'
+
 const Header = () => {
   return (
     <header>
-      <div className="bg-blue-500">header</div>
+      <div>
+        <Navbar />
+      </div>
     </header>
   )
 }
