@@ -2,7 +2,7 @@ import Navbar from '../navbar.tsx'
 
 const Header = () => {
   return (
-    <header>
+    <header className='fixed'>
       <div>
         <Navbar />
       </div>

@@ -7,7 +7,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className="grid grid-cols-[auto,1fr] desktop:max-w-7xl laptop:max-w-5xl mobile:max-w-6xl max-w-2xl mx-auto">
+    <div className="grid-cols-[auto,1fr] desktop:max-w-7xl laptop:max-w-5xl mobile:max-w-6xl max-w-2xl mx-auto">
       <Header />
       <Main>{children}</Main>
     </div>
