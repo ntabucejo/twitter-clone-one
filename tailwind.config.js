@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     screens: {
       tablet: '640px',
-      laptop: '1024px',
-      desktop: '1280px',
+      laptop: '1060px',
+      desktop: '1320px',
     },
     extend: {},
   },
