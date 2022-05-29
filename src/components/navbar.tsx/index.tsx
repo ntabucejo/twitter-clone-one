@@ -15,8 +15,8 @@ import Me from './me'
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-col gap-5 py-4 px-3 min-h-screen justify-between">
-      <div className='flex flex-col gap-5 py-4 '>
+    <nav className="flex flex-col gap-5 px-3 py-4 min-h-screen justify-between items-center">
+      <div className='flex flex-col gap-5 items-center 2xl:items-stretch'>
         <div className="px-4">
           <Logo />
         </div>
