@@ -1,7 +1,7 @@
 import { DotsHorizontalIcon } from '@heroicons/react/solid'
 import Avatar from '../avatar'
 import { LikeIcon, ReplyIcon, RetweetIcon, ShareIcon } from '../icons'
-import PostType from '../library/types/post'
+import PostType from '../../library/types/post'
 import Rune from '../rune'
 
 type Props = {

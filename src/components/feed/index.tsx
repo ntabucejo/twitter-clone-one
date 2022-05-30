@@ -1,4 +1,4 @@
-import posts from '../library/data/posts'
+import posts from '../../library/data/posts'
 import Post from './post'
 
 const Feed = () => {
