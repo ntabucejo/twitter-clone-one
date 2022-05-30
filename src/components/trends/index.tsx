@@ -1,5 +1,5 @@
-import trends from "../../library/data/trends"
-import Trend from "./trend"
+import trends from '../../library/data/trends'
+import Trend from './trend'
 
 const Trends = () => {
   return (
@@ -7,7 +7,7 @@ const Trends = () => {
       <h1 className="text-[1.25rem] font-black px-4 pb-4">Trends For You</h1>
       <div>
         {trends.map((trend) => (
-          <Trend trend={trend}/>
+          <Trend key={trend.id} trend={trend} />
         ))}
       </div>
     </section>
