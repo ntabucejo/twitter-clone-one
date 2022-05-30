@@ -1,4 +1,6 @@
-const posts = [
+import Post from '../types/post'
+
+const posts: Post[] = [
   {
     id: '1',
     caption:
