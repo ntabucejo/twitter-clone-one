@@ -1,6 +1,6 @@
 const Tweet = () => {
   return (
-    <button className="bg-sky-500 p-3 desktop:py-4 text-base font-bold text-white rounded-full">
+    <button className="bg-sky-500 p-3 desktop:py-4 text-base font-bold text-white rounded-full max-w-[13.75rem]">
       <span className="desktop:block hidden">Tweet</span>
       <div className="desktop:hidden w-6 h-6">
         <svg viewBox="0 0 24 24" aria-hidden="true" fill="#F8FAFC">
