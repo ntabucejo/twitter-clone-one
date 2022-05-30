@@ -22,24 +22,27 @@ const Publisher = () => {
         <div className="flex items-center justify-between">
           <div className="flex ">
             <Rune
-              Icon={<MediaIcon color="#0EA5E9" />}
-              color="hover:bg-sky-100"
-            />
-            <Rune Icon={<GifIcon color="#0EA5E9" />} color="hover:bg-sky-100" />
-            <Rune
-              Icon={<PollIcon color="#0EA5E9" />}
+              Icon={<MediaIcon fill="fill-sky-500" />}
               color="hover:bg-sky-100"
             />
             <Rune
-              Icon={<EmojiIcon color="#0EA5E9" />}
+              Icon={<GifIcon fill="fill-sky-500" />}
               color="hover:bg-sky-100"
             />
             <Rune
-              Icon={<ScheduleIcon color="#0EA5E9" />}
+              Icon={<PollIcon fill="fill-sky-500" />}
               color="hover:bg-sky-100"
             />
             <Rune
-              Icon={<LocationIcon color="#0EA5E9" />}
+              Icon={<EmojiIcon fill="fill-sky-500" />}
+              color="hover:bg-sky-100"
+            />
+            <Rune
+              Icon={<ScheduleIcon fill="fill-sky-500" />}
+              color="hover:bg-sky-100"
+            />
+            <Rune
+              Icon={<LocationIcon fill="fill-sky-500" />}
               color="hover:bg-sky-100"
             />
           </div>

@@ -1,46 +1,60 @@
 import { DotsHorizontalIcon } from '@heroicons/react/solid'
 import Avatar from '../avatar'
 import { LikeIcon, ReplyIcon, RetweetIcon, ShareIcon } from '../icons'
+import PostType from '../library/types/post'
 import Rune from '../rune'
 
-const Post = () => {
+type Props = {
+  post: PostType
+}
+
+const Post = ({ post }: Props) => {
   return (
-    <div className="border-t-[1px] px-4 pt-3 pb-2">
+    <div className="border-t-[1px] px-4 pt-3 pb-2 hover:bg-neutral-100 transition-colors duration-500 ease-out">
       <div className="grid grid-cols-[auto,1fr] gap-3">
-        <Avatar
-          src="https://images.unsplash.com/photo-1614639437280-558b05b13939?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-          alt="Profile"
-        />
+        <Avatar src={post.image} alt={post.username} />
         <div>
           <div className="flex gap-1">
-            <h1 className="font-bold">Matt Pocock</h1>
-            <h2 className="text-neutral-500">@mattpocockuk</h2>
+            <h1 className="font-bold">{post.name}</h1>
+            <h2 className="text-neutral-500">@{post.username}</h2>
             <span className="text-neutral-500">•</span>
-            <h2 className="text-neutral-500">4h</h2>
-            <DotsHorizontalIcon className="w-4 h-4 ml-auto text-neutral-400" />
+            <h2 className="text-neutral-500">{post.time}</h2>
+            <div className="p-2 hover:bg-sky-100 ml-auto rounded-full group cursor-pointer transition-colors duration-500 ease-out">
+              <DotsHorizontalIcon className="w-4 h-4 text-neutral-400 group-hover:text-sky-500" />
+            </div>
           </div>
-          <p>
-            quibusdam veniam dolores, pariatur vitae quam accusamus modi
-            Nostrum, cupiditate natus!
-          </p>
+          <p>{post.caption}</p>
 
-          <div className="flex justify-between mt-3 max-w-md">
-            <Rune
-              Icon={<ReplyIcon color="#0EA5E9" />}
-              color="hover:bg-sky-100"
-            />
-            <Rune
-              Icon={<RetweetIcon color="#22C55E" />}
-              color="hover:bg-green-100"
-            />
-            <Rune
-              Icon={<LikeIcon color="#F43F5E" />}
-              color="hover:bg-rose-100"
-            />
-            <Rune
-              Icon={<ShareIcon color="#0EA5E9" />}
-              color="hover:bg-sky-100"
-            />
+          <div className="flex justify-between mt-3 max-w-md cursor-pointer">
+            <div className="flex gap-1 items-center group pr-4">
+              <Rune
+                Icon={<ReplyIcon fill="group-hover:fill-sky-500" />}
+                color="group-hover:bg-sky-100"
+              />
+              <p className="text-xs group-hover:text-sky-500">{post.replies}</p>
+            </div>
+            <div className="flex gap-1 items-center group px-4">
+              <Rune
+                Icon={<RetweetIcon fill="group-hover:fill-green-500" />}
+                color="group-hover:bg-green-100"
+              />
+              <p className="text-xs group-hover:text-green-500">
+                {post.retweets}
+              </p>
+            </div>
+            <div className="flex gap-1 items-center group px-4">
+              <Rune
+                Icon={<LikeIcon fill="group-hover:fill-rose-500" />}
+                color="group-hover:bg-rose-100"
+              />
+              <p className="text-xs group-hover:text-rose-500">{post.likes}</p>
+            </div>
+            <div className="flex gap-1 items-center group pl-4">
+              <Rune
+                Icon={<ShareIcon fill="group-hover:fill-sky-500" />}
+                color="group-hover:bg-sky-100"
+              />
+            </div>
           </div>
         </div>
       </div>

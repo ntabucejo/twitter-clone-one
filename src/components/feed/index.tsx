@@ -1,11 +1,12 @@
+import posts from '../library/data/posts'
 import Post from './post'
 
 const Feed = () => {
   return (
     <section>
-      <Post />
-      <Post />
-      <Post />
+      {posts.map((post) => (
+        <Post key={post.id} post={post} />
+      ))}
     </section>
   )
 }
