@@ -15,7 +15,7 @@ import Me from './me'
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-col gap-5 px-2 py-4 min-h-screen justify-between items-center">
+    <nav className="flex-col gap-5 px-2 py-4 min-h-screen justify-between items-center hidden tablet:flex">
       <div className="flex flex-col gap-5 items-center desktop:items-stretch w-full">
         <div className="px-4">
           <Logo />

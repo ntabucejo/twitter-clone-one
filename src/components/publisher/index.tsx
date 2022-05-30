@@ -20,7 +20,7 @@ const Publisher = () => {
       <div className="space-y-10 w-full">
         <Textbox />
         <div className="flex items-center justify-between">
-          <div className="flex ">
+          <div className="flex">
             <Rune
               Icon={<MediaIcon fill="fill-sky-500" />}
               color="hover:bg-sky-100"

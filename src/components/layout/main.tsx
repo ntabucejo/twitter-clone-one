@@ -5,7 +5,7 @@ type Props = {
 const Main = ({ children }: Props) => {
   return (
     <main>
-      <div className="grid grid-cols-[auto,1fr] mobile:grid-cols-[37.5rem,auto] desktop:ml-72 ml-20 min-h-screen">
+      <div className="grid grid-cols-[auto,1fr] desktop:ml-72 tablet:ml-20 min-h-screen">
         {children}
       </div>
     </main>
