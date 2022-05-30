@@ -14,7 +14,7 @@ const Post = ({ post }: Props) => {
       <div className="grid grid-cols-[auto,1fr] gap-3">
         <Avatar src={post.image} alt={post.username} />
         <div>
-          <div className="flex gap-1">
+          <div className="flex gap-1 items-center">
             <h1 className="font-bold">{post.name}</h1>
             <h2 className="text-neutral-500">@{post.username}</h2>
             <span className="text-neutral-500">•</span>
@@ -23,6 +23,7 @@ const Post = ({ post }: Props) => {
               <DotsHorizontalIcon className="w-4 h-4 text-neutral-400 group-hover:text-sky-500" />
             </div>
           </div>
+
           <p>{post.caption}</p>
 
           <div className="flex justify-between mt-3 max-w-md cursor-pointer">
