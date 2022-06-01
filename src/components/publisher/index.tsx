@@ -1,3 +1,4 @@
+import { ViewBoardsIcon } from '@heroicons/react/solid'
 import Avatar from '../avatar'
 import {
   EmojiIcon,
@@ -19,8 +20,11 @@ const Publisher = () => {
       />
       <div className="space-y-10 w-full">
         <Textbox />
-        <div className="flex items-center justify-between">
-          <div className="flex">
+        <div className="flex items-center justify-between gap-4">
+          <div className="hover:bg-sky-100 p-2 rounded-full transition-colors duration-500 ease-out cursor-pointer mobile:hidden">
+            <ViewBoardsIcon className="w-5 h-5 text-sky-500" />
+          </div>
+          <div className="mobile:flex items-center hidden ">
             <Rune
               Icon={<MediaIcon fill="fill-sky-500" />}
               color="hover:bg-sky-100"
@@ -46,7 +50,7 @@ const Publisher = () => {
               color="hover:bg-sky-100"
             />
           </div>
-          <button className="bg-sky-500 px-5 py-2 text-white font-bold rounded-full">
+          <button className="bg-sky-500 px-5 py-2 text-white font-bold rounded-full w-full mobile:w-auto">
             Tweet
           </button>
         </div>

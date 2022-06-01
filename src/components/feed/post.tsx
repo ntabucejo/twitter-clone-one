@@ -16,7 +16,7 @@ const Post = ({ post }: Props) => {
         <div>
           <div className="flex gap-1 items-center">
             <h1 className="font-bold">{post.name}</h1>
-            <h2 className="text-neutral-500">@{post.username}</h2>
+            <h2 className="text-neutral-500 hidden mobile:block">@{post.username}</h2>
             <span className="text-neutral-500">•</span>
             <h2 className="text-neutral-500">{post.time}</h2>
             <div className="p-2 hover:bg-sky-100 ml-auto rounded-full group cursor-pointer transition-colors duration-500 ease-out">
@@ -27,14 +27,14 @@ const Post = ({ post }: Props) => {
           <p>{post.caption}</p>
 
           <div className="flex justify-between mt-3 max-w-md cursor-pointer">
-            <div className="flex gap-1 items-center group pr-4">
+            <div className="flex items-center group tablet:pr-4">
               <Rune
                 Icon={<ReplyIcon fill="group-hover:fill-sky-500" />}
                 color="group-hover:bg-sky-100"
               />
               <p className="text-xs group-hover:text-sky-500">{post.replies}</p>
             </div>
-            <div className="flex gap-1 items-center group px-4">
+            <div className="flex gap-1 items-center group tabletpx-4">
               <Rune
                 Icon={<RetweetIcon fill="group-hover:fill-green-500" />}
                 color="group-hover:bg-green-100"
@@ -43,14 +43,14 @@ const Post = ({ post }: Props) => {
                 {post.retweets}
               </p>
             </div>
-            <div className="flex gap-1 items-center group px-4">
+            <div className="flex gap-1 items-center group tabletpx-4">
               <Rune
                 Icon={<LikeIcon fill="group-hover:fill-rose-500" />}
                 color="group-hover:bg-rose-100"
               />
               <p className="text-xs group-hover:text-rose-500">{post.likes}</p>
             </div>
-            <div className="flex gap-1 items-center group pl-4">
+            <div className="flex gap-1 items-center group tabletpl-4">
               <Rune
                 Icon={<ShareIcon fill="group-hover:fill-sky-500" />}
                 color="group-hover:bg-sky-100"
