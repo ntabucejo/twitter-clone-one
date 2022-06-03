@@ -66,8 +66,8 @@ Coded by [Nikko Abucejo](https://github.com/ntabucejo).
 
 ## Screenshots
 
-![Desktop screenshot](https://github.com/ntabucejo/twitter-clone-one/blob/main/src/assets/screenshots/deskstop-1.png?raw=true)
-![Desktop screenshot](https://github.com/ntabucejo/twitter-clone-one/blob/main/src/assets/screenshots/deskstop-2.png?raw=true)
+![Desktop screenshot](https://github.com/ntabucejo/twitter-clone-one/blob/main/src/assets/screenshots/desktop-1.png?raw=true)
+![Desktop screenshot](https://github.com/ntabucejo/twitter-clone-one/blob/main/src/assets/screenshots/desktop-2.png?raw=true)
 
 ## Demo
 
