@@ -1,7 +1,6 @@
 # Twitter Clone One
 
-A fully responsive frontend [Twitter Clone](twitter-clone-one.ntabucejo.vercel.app/).
-Coded by [Nikko Abucejo](https://github.com/ntabucejo).
+A fully responsive frontend [Twitter](twitter-clone-one.ntabucejo.vercel.app/) clone.
 
 ## Strategies 
 
