@@ -50,7 +50,7 @@ const Publisher = () => {
               color="hover:bg-sky-100"
             />
           </div>
-          <button className="bg-sky-500 px-5 py-2 text-white font-bold rounded-full w-full mobile:w-auto">
+          <button className="bg-sky-500 hover:bg-sky-400 hover-transition px-5 py-2 text-white font-bold rounded-full w-full mobile:w-auto">
             Tweet
           </button>
         </div>

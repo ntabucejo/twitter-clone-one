@@ -6,7 +6,7 @@ type Props = {
 const Rune = ({ Icon, color }: Props) => {
   return (
     <div
-      className={`${color} w-9 h-9 p-2 rounded-full transition-colors duration-500 ease-out cursor-pointer`}>
+      className={`${color} w-9 h-9 p-2 rounded-full hover-transition cursor-pointer`}>
       {Icon}
     </div>
   )
