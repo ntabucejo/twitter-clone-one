@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .hover-transition {
+    @apply transition-colors duration-500 ease-out
+  }
+}
