@@ -1,14 +1,6 @@
 import { ViewBoardsIcon } from '@heroicons/react/solid'
 import Avatar from '../avatar'
-import {
-  EmojiIcon,
-  GifIcon,
-  LocationIcon,
-  MediaIcon,
-  PollIcon,
-  ScheduleIcon,
-} from '../icons'
-import Rune from '../rune'
+import Actions from './actions'
 import Textbox from './textbox'
 
 const Publisher = () => {
@@ -24,35 +16,7 @@ const Publisher = () => {
           <div className="hover:bg-sky-100 p-2 rounded-full transition-colors duration-500 ease-out cursor-pointer mobile:hidden">
             <ViewBoardsIcon className="w-5 h-5 text-sky-500" />
           </div>
-          <div className="mobile:flex items-center hidden ">
-            <Rune
-              Icon={<MediaIcon fill="fill-sky-500" />}
-              color="hover:bg-sky-100"
-            />
-            <Rune
-              Icon={<GifIcon fill="fill-sky-500" />}
-              color="hover:bg-sky-100"
-            />
-            <Rune
-              Icon={<PollIcon fill="fill-sky-500" />}
-              color="hover:bg-sky-100"
-            />
-            <Rune
-              Icon={<EmojiIcon fill="fill-sky-500" />}
-              color="hover:bg-sky-100"
-            />
-            <Rune
-              Icon={<ScheduleIcon fill="fill-sky-500" />}
-              color="hover:bg-sky-100"
-            />
-            <Rune
-              Icon={<LocationIcon fill="fill-sky-500" />}
-              color="hover:bg-sky-100"
-            />
-          </div>
-          <button className="bg-sky-500 hover:bg-sky-400 hover-transition px-5 py-2 text-white font-bold rounded-full w-full mobile:w-auto">
-            Tweet
-          </button>
+          <Actions />
         </div>
       </div>
     </section>
