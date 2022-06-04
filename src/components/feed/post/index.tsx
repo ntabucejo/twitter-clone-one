@@ -1,4 +1,4 @@
-import PostType from '../../../library/types/post'
+import PostType from '../../../schemas/post'
 import Avatar from '../../avatar'
 import Actions from './actions'
 import Heading from './heading'

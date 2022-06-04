@@ -1,4 +1,4 @@
-import Trend from '../types/trend'
+import Trend from '../schemas/trend'
 
 const trends: Trend[] = [
   {

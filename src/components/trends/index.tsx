@@ -1,4 +1,4 @@
-import trends from '../../library/data/trends'
+import trends from '../../data/trends'
 import Trend from './trend'
 
 const Trends = () => {
